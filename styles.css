@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+#input_video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+#three_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+#biometric_canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    color: #00f0ff;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0 0 10px #00f0ff;
+    border-left: 3px solid #00f0ff;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+}
+
+.stat-val {
+    color: #fff;
+}
+
+.hint {
+    font-size: 10px;
+    margin-top: 5px;
+    color: #ff3333;
+}
